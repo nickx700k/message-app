@@ -1,0 +1,70 @@
+{
+  "users-chat": [
+    {
+      "id": "danniel_rose_russell",
+      "photo": "/danniel_rose_russell.jpg",
+      "name": "Danniel Rose Russell",
+      "phone": "123-456-7890",
+      "last": "00:05",
+      "state": "online",
+      "sendM": ["Hi", "fint too"],
+      "receM": ["Hi", "fint too"],
+      "bio": "Danielle Rose Russell is an American actress. She is known for her role as Hope Mikaelson in the fifth and final season of The CW supernatural drama series The Originals and as the star of the spinoff series, Legacies, which premiered on October 25, 2018, and aired four seasons, ending on June 16, 2022"
+    },
+    {
+      "id": "kaylee_bryant",
+      "photo": "/kaylee_bryant.jpg",
+      "name": "Kaylee Bryant",
+      "phone": "123-456-7890",
+      "last": "00:05",
+      "state": "offline",
+      "sendM": ["Hi", "fint too"],
+      "receM": ["Hi", "fint too"],
+      "bio": "Kaylee Marie Kaneshiro Bryant is an American actress and model. She is known for portraying Josie Saltzman on The CW television series, Legacies, a role she played from 2018 to 2021"
+    },
+    {
+      "id": "jenny_boyd",
+      "photo": "/jenny_boyd.jpg",
+      "name": "Jenny Boyd",
+      "phone": "123-456-7890",
+      "last": "00:05",
+      "state": "offline",
+      "sendM": ["Hi", "fint too"],
+      "receM": ["Hi", "fint too"],
+      "bio": "Jenny Boyd was born in Sion, Switzerland and holds dual English and U.S. citizenship. After travelling the world as an international model with Elite New York, she graduated from the London Academy of Music and Dramatic Art (LAMDA) with a Bachelor's degree in acting. She was raised in Oregon and now lives and works out of Los Angeles, CA"
+    },
+    {
+      "id": "aria_shahghasemi",
+      "photo": "/aria_shahghasemi.jpg",
+      "name": "Aria Shahghasemi",
+      "phone": "123-456-7890",
+      "last": "00:05",
+      "state": "online",
+      "sendM": ["Hi", "fint too"],
+      "receM": ["Hi", "fint too"],
+      "bio": "Aria Shahghasemi was born in Minneapolis, MN on October 7, 1996 to parents that had migrated to the USA from Iran. He attended the Neighborhood Playhouse School of the Theatre in New York City where he acquired an acting apprenticeship in 2015."
+    },
+    {
+      "id": "matthew_davis",
+      "photo": "/matthew_davis.jpg",
+      "name": "Matthew Davis",
+      "phone": "123-456-7890",
+      "last": "00:05",
+      "state": "offline",
+      "sendM": ["Hi", "fint too"],
+      "receM": ["Hi", "fint too"],
+      "bio": "Matthew Davis, also professionally known as Matt Davis, is an American actor. He is mostly known for his roles as Warner Huntington III in Legally Blonde, Adam Hillman on the ABC comedy-drama What About Brian from 2006 to 2007 and Alaric Saltzman on The CW fantasy drama The Vampire Diaries from 2009 to 2017 as well as the spin-off series Legacies from 2018 to 2022. He starred on the short-lived CW mystery and horror drama Cult as Jeff Sefton, and had a recurring role on the CBS police drama CSI: Crime Scene Investigation as Sean Yeager."
+    },
+    {
+      "id": "zach_roerig",
+      "photo": "/zach_roerig.jpg",
+      "name": "Zach Roerig",
+      "phone": "123-456-7890",
+      "last": "00:05",
+      "state": "offline",
+      "sendM": ["Hi", "fint too"],
+      "receM": ["Hi", "fint too"],
+      "bio": "Zachary George Roerig is an American actor, known for his roles as Casey Hughes on As the World Turns, Hunter Atwood on One Life to Live and Matt Donovan on The Vampire Diaries."
+    }
+  ]
+}

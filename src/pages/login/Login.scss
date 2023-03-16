@@ -1,0 +1,102 @@
+.login {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1e775fac-17e5-4405-b7a0-299d0d7f9744/dfo4a7f-cf3d7abf-a42b-4c1a-8cff-f73d505451ee.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFlNzc1ZmFjLTE3ZTUtNDQwNS1iN2EwLTI5OWQwZDdmOTc0NFwvZGZvNGE3Zi1jZjNkN2FiZi1hNDJiLTRjMWEtOGNmZi1mNzNkNTA1NDUxZWUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.-YY6q1SLbl9elGbVQNT2jL79RgAwrwEbFRwAjcDor-M");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  &--container {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 5px;
+    color: #333;
+    font-family: sans-serif;
+    line-height: 1.5;
+    width: 500px;
+    height: 550px;
+    padding: 1rem 2rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    flex-direction: column;
+    padding: 5rem 0;
+    &--loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 70px;
+      &--div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+        &--profile {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+        }
+      }
+    }
+    &--profile {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--white-1);
+      position: relative;
+      border-radius: 50%;
+      padding: 4rem;
+      &--icon {
+        color: var(--black-80);
+        font-size: 4rem;
+      }
+    }
+    &--inputs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      flex-direction: column;
+      &--div {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &--input {
+          width: 300px;
+          height: 30px;
+          border: 0;
+          outline: 0;
+          border-radius: 20px;
+          padding: 0.5rem 1rem;
+        }
+        &--icon {
+          position: absolute;
+          right: 10px;
+          font-size: 1.5rem;
+        }
+      }
+    }
+    &--button {
+      width: 180px;
+      height: 90px;
+      border-radius: 5px;
+      border: 0;
+      cursor: pointer;
+    }
+  }
+
+  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    &--container {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}

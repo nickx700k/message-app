@@ -1,0 +1,49 @@
+.rooms {
+  width: 100%;
+  &--container {
+    width: 100%;
+    &--table {
+      width: 100%;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      &--room {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 0.5rem;
+        border-radius: 50px;
+        transition: var(--transition);
+        cursor: pointer;
+        &--header {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &--icon {
+            font-size: 2rem;
+            background-color: var(--pink-1);
+            color: #fff;
+            padding: 1rem;
+            border-radius: 50%;
+          }
+        }
+        &--info {
+          display: flex;
+          align-items: left;
+          justify-content: center;
+          flex-direction: column;
+          gap: 5px;
+          &--h4 {
+            font-size: 1.2rem;
+            color: var(--black-80);
+          }
+        }
+      }
+      &--room:hover {
+        background-color: var(--hover-1);
+        border-radius: 50px;
+      }
+    }
+  }
+}

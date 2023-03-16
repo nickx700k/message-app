@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white-1: #f5f5f5;
+  --white-2: #eeeeee;
+  --black-80: #4a4a4a;
+  --green-1: #19bf1d;
+  --pink-1: #cb21c0;
+  --pink-2: #8121cb;
+  --hover-1: #dcdcdc;
+  --transition: all 0.3s;
+}
+
+.page-title {
+  padding: 1rem;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4a4a4a;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+}

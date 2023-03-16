@@ -1,0 +1,1 @@
+json-server --watch ../src/data/users.json --port 3001

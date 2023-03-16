@@ -1,0 +1,22 @@
+{
+  "chatrooms": [
+    {
+      "id": 1,
+      "chatTitle": "first",
+      "chatIcon": "bx bxs-message-square-dots",
+      "chatMessage": ["Hi", "What Are You Doing?"]
+    },
+    {
+      "id": 2,
+      "chatTitle": "second",
+      "chatIcon": "bx bxs-message-square-dots",
+      "chatMessage": ["Hi", "What Are You Doing?"]
+    },
+    {
+      "id": 3,
+      "chatTitle": "third",
+      "chatIcon": "bx bxs-message-square-dots",
+      "chatMessage": ["Hi", "What Are You Doing?"]
+    }
+  ]
+}
