@@ -10,8 +10,10 @@ const Home = () => {
   const [users, setUsers] = useState([]);
 
   const [loading, setLoading] = useState(false);
-  const usersApi = "http://localhost:3002/users-chat";
-  const chatRoomApi = "http://localhost:3003/chatrooms";
+  const usersApi =
+    "https://api.jsonstorage.net/v1/json/03537e04-0bc5-47aa-a096-990b9631e38e/be02babe-7b3b-442a-8e78-4ae61605eeb3";
+  const chatRoomApi =
+    "https://api.jsonstorage.net/v1/json/03537e04-0bc5-47aa-a096-990b9631e38e/c8a99813-b7bd-457f-b3fd-d155a6941e90";
   const navigate = useNavigate();
   const { search } = useContext(SearchTerm);
 
@@ -20,10 +22,10 @@ const Home = () => {
     const fetchAll = async () => {
       await fetch(usersApi)
         .then((response) => response.json())
-        .then((res) => setUsers(res));
+        .then((res) => setUsers(res.usersChat));
       await fetch(chatRoomApi)
         .then((response) => response.json())
-        .then((res) => setChatRooms(res));
+        .then((res) => setChatRooms(res.chatrooms));
     };
     fetchAll();
 

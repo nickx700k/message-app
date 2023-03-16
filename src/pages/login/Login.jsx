@@ -6,9 +6,11 @@ import { FadeLoader } from "react-spinners";
 import "./Login.scss";
 
 const Login = () => {
-  const url = "http://localhost:3001/users";
+  const api =
+    "https://api.jsonstorage.net/v1/json/03537e04-0bc5-47aa-a096-990b9631e38e/f34feb7e-e606-419e-88a8-0d1baba93bed";
   const [data, setData] = useState([]);
   const [user, setUser] = useState([]);
+
   const [loading, setLoading] = useState(false);
   const [profile, setProfile] = useState(false);
 
@@ -22,9 +24,9 @@ const Login = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(url)
+    fetch(api)
       .then((response) => response.json())
-      .then((res) => setUser(res));
+      .then((res) => setUser(res.users));
   }, []);
 
   useEffect(() => {

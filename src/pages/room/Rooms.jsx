@@ -5,7 +5,8 @@ import { SearchTerm } from "../../components/header/Header";
 const Rooms = () => {
   const [chatRooms, setChatRooms] = useState([]);
   const [loading, setLoading] = useState(false);
-  const api = "http://localhost:3003/chatrooms";
+  const api =
+    "https://api.jsonstorage.net/v1/json/03537e04-0bc5-47aa-a096-990b9631e38e/c8a99813-b7bd-457f-b3fd-d155a6941e90";
   const { search } = useContext(SearchTerm);
 
   useEffect(() => {
@@ -13,7 +14,7 @@ const Rooms = () => {
     const fetchChatRooms = async () => {
       await fetch(api)
         .then((response) => response.json())
-        .then((res) => setChatRooms(res));
+        .then((res) => setChatRooms(res.chatrooms));
     };
     fetchChatRooms();
     setLoading(false);

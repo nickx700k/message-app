@@ -4,14 +4,15 @@ import "./Account.scss";
 
 const UserProfile = () => {
   const [account, setAccount] = useState(null);
-  const api = "http://localhost:3001/users";
+  const api =
+    "https://api.jsonstorage.net/v1/json/03537e04-0bc5-47aa-a096-990b9631e38e/f34feb7e-e606-419e-88a8-0d1baba93bed";
   const { id } = useParams();
   useEffect(() => {
     const handleAccount = async () => {
       await fetch(api)
         .then((response) => response.json())
         .then((res) =>
-          res.map((item) => {
+          res?.users.map((item) => {
             if (item?.id === id) {
               setAccount(item);
             }

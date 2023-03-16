@@ -6,7 +6,8 @@ import "./Profile.scss";
 const Profile = () => {
   const { id } = useParams();
   const [profile, setProfile] = useState(null);
-  const api = "http://localhost:3002/users-chat";
+  const api =
+    "https://api.jsonstorage.net/v1/json/03537e04-0bc5-47aa-a096-990b9631e38e/be02babe-7b3b-442a-8e78-4ae61605eeb3";
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -14,7 +15,7 @@ const Profile = () => {
       await fetch(api)
         .then((response) => response.json())
         .then((res) => {
-          return res.find((item) => {
+          return res?.usersChat.find((item) => {
             if (item?.id === id) {
               setProfile(item);
             }

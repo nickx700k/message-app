@@ -5,7 +5,8 @@ import { SearchTerm } from "../../components/header/Header";
 
 const Users = () => {
   const [loading, setLoading] = useState(false);
-  const api = "http://localhost:3002/users-chat";
+  const api =
+    "https://api.jsonstorage.net/v1/json/03537e04-0bc5-47aa-a096-990b9631e38e/be02babe-7b3b-442a-8e78-4ae61605eeb3";
   const [users, setUsers] = useState([]);
   const { search } = useContext(SearchTerm);
 
@@ -16,7 +17,7 @@ const Users = () => {
     const fetchUsers = async () => {
       await fetch(api)
         .then((response) => response.json())
-        .then((res) => setUsers(res));
+        .then((res) => setUsers(res.usersChat));
     };
     fetchUsers();
     setLoading(false);
