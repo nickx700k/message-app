@@ -38,7 +38,7 @@ const Message = () => {
       last: user?.last,
       state: user?.state,
       sendM: user?.sendM.concat(send),
-      receM: user?.receM,
+
       bio: user?.bio,
     });
   };
@@ -53,7 +53,7 @@ const Message = () => {
         last: user?.last,
         state: user?.state,
         sendM: user?.sendM.concat(send),
-        receM: user?.receM,
+
         bio: user?.bio,
       });
     }
@@ -98,16 +98,6 @@ const Message = () => {
                 <span
                   key={index}
                   className="message--container--body--messages--sendMessage--span"
-                >
-                  {item}
-                </span>
-              ))}
-            </div>
-            <div className="message--container--body--messages--recevMessage">
-              {user?.receM.map((item, index) => (
-                <span
-                  key={index}
-                  className="message--container--body--messages--recevMessage--span"
                 >
                   {item}
                 </span>
