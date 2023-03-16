@@ -38,9 +38,9 @@ const Message = () => {
       last: user?.last,
       state: user?.state,
       sendM: user?.sendM.concat(send),
-
       bio: user?.bio,
     });
+    setSend("");
   };
 
   const handleSendKey = (e) => {
@@ -56,6 +56,7 @@ const Message = () => {
 
         bio: user?.bio,
       });
+      setSend("");
     }
   };
 
