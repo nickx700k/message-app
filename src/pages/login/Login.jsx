@@ -33,7 +33,7 @@ const Login = () => {
     const timeout = setTimeout(() => {
       setLoading(false);
       navigate("/");
-    }, 4000);
+    }, 9000);
 
     return () => clearTimeout(timeout);
   }, [loading]);
